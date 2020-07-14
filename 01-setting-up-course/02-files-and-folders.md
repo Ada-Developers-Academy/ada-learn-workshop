@@ -7,6 +7,8 @@ Each Cohort/Course in Learn is made up of sections, each section is a repository
 
 Today we are just going to set up one section, since they're mostly all alike.  Each Section has several units which are collections of markdown, and other documents like PDF, or Jupyter Notebook (READ ONLY).
 
+## Folders
+
 You can create units with a collection of folders in your github repository.  It's a good idea to number the folders in the sequence you want students to tackle them.  
 
 ![Github Repo Folders](images/github-unit-folders.png)
