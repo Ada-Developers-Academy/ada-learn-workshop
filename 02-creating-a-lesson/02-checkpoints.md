@@ -50,3 +50,7 @@ course.yaml lists the repos used for a course.
 ### !end-challenge
 
 <!-- ======================= END CHALLENGE ======================= -->
+
+## Exercise
+
+Create a checkpoint lesson with 1 question and then publish the results.
