@@ -17,7 +17,6 @@ You can create units with a collection of folders in your github repository.  It
 
 You can create markdown, PDF and even Jupyter Notebook files which contain each lesson in a unit.  Learn supports regular Github markdown, with it's own styling.
 
-![Github files](iamges/)
 
 ## Exercise
 
