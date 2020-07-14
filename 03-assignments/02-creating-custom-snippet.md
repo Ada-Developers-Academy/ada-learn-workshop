@@ -73,8 +73,8 @@ You should also create a Bash script file to run the tests.  Below is a sample b
 ```bash
 #!/bin/bash
 
-# copy submission.txt into a ruby file
-cp submission.txt submission.rb
+# rename submission.txt into a ruby file
+mv submission.txt submission.rb
 
 # Run the test file
 ruby snippet_test.rb
@@ -117,6 +117,9 @@ end
 
 
 describe "Test Suite" do
+
+  # Run the file as a Ruby file and capture
+  #   standard output
   def user_input_helper(given_input, filename)
     output = StringIO.new
     original_stdout = $stdout
@@ -135,7 +138,7 @@ describe "Test Suite" do
     
     includes_hello = false
     output_list.each do |word|
-      if (word.match /hello,/i)
+      if word.match /hello,/i
         includes_hello = true
       end
     end
@@ -148,7 +151,7 @@ describe "Test Suite" do
 
     includes_world = false
     output_list.each do |word|
-      if (word.match /world\!/i)
+      if word.match /world\!/i
         includes_world = true
       end
     end
