@@ -84,3 +84,12 @@ What is the answer to the ultimate question?
 ## Exercise
 
 With your partner create a couple of Questions in your markdown documents.  Then publish the material on Learn and view them in the LMS.  
+
+## Special File Types
+
+You can create other content types by following naming conventions.
+
+*  Use the extension `.instructor.md` to make a file that is only visible to instructors.
+*  Use the extension `.checkpoint.md` to make an assessment.
+*  Use the file extension `.hidden.md` to make a file that starts out hidden and can be made visible later.
+*  Use the file extension `.resource.md` to make a files that is accessible to students but not included in the left navigation.
