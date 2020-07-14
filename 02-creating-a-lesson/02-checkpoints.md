@@ -1,6 +1,6 @@
 # Checkpoints
 
-A Checkpoint is a markdown file which is named to end with `checkpoint.md`.  Each Checkpoint file must have at least one question.  Checkpoints are otherwise normal markdown documents.   Checkpoints are essentially tests, you can make them 
+A Checkpoint is a markdown file which is named to end with `checkpoint.md`.  Each Checkpoint file must have at least one question.  Checkpoints are otherwise normal markdown documents.   Checkpoints are essentially tests, you can create auto-graded and 
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
