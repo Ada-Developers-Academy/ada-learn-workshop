@@ -8,15 +8,7 @@ You can see a list of special markdown blocks Learn can handle by typing `learn 
 
 You can generate callouts by using the following code.  You can generate a template for a callout by using the Learn Cli tool and typing 
 
-```txt
-<!-- available callout types: info, success, warning, danger, secondary  -->
-### !callout-info
-
-## title
-body
-
-### !end-callout
-```
+![Callouts](images/callout.png)
 
 ## Learn Questions
 
@@ -39,47 +31,7 @@ The multiplechoice, checkbox, shortanswer, number and many programming exercises
 
 An example question is:
 
-```txt
-<!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
-<!-- Replace everything in square brackets [] and remove brackets  -->
-
-### !challenge
-
-* type: multiple-choice
-* id: a1df3456-f00d-4a12-bcf8-e77fa9ccc1a3
-* title: Hitchhiker's Guide
-* points: 1
-* topics: questions about life
-
-##### !question
-
-What is the answer to the ultimate question?
-
-##### !end-question
-
-##### !options
-
-* 42
-* Pasta
-* Pizza
-
-##### !end-options
-
-##### !answer
-
-* 42
-
-##### !end-answer
-
-<!-- other optional sections -->
-<!-- !hint - !end-hint (markdown, users can see after a failed attempt) -->
-<!-- !rubric - !end-rubric (markdown, instructors can see while scoring a checkpoint) -->
-<!-- !explanation - !end-explanation (markdown, students can see after answering correctly) -->
-
-### !end-challenge
-
-<!-- ======================= END CHALLENGE ======================= -->
-```
+![Multiple Choice Question](images/mc-question.png)
 
 ## Exercise
 
