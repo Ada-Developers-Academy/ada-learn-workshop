@@ -28,12 +28,12 @@ Standards:
         Path: /01-setting-up-course/02-files-and-folders.md
       -
         Type: Lesson
-        UID: 7bd8cbbf57208c364b52b892b7632ee0
-        Path: /01-setting-up-course/03-connecting-course-and-repo.md
+        UID: b839e19273b7dbb70814cab8658ade6b
+        Path: /01-setting-up-course/03-config-vs-autoconfig.yaml.md
       -
         Type: Lesson
-        UID: c2fd4ce6e82d60b860d1018ee8ed888d
-        Path: /01-setting-up-course/04-config-vs-autoconfig.yaml.md
+        UID: cdf50283b41c500b0670e5d89343b8f4
+        Path: /01-setting-up-course/04-connecting-course-and-repo.md
   -
     Title: Creating A Lesson
     Description: Creating A Lesson
@@ -46,13 +46,9 @@ Standards:
         UID: 64c3de83840b43b5fb1394cd6fa50922
         Path: /02-creating-a-lesson/01-learn-markdown.md
       -
-        Type: Lesson
-        UID: 4a5e3e3b738f73a88f1b441c1a644a58
-        Path: /02-creating-a-lesson/02-interactive-questions.md
-      -
         Type: Checkpoint
-        UID: d8376ff0c75e2ed8f7eee1d9d67c3360
-        Path: /02-creating-a-lesson/03-checkpoints.md
+        UID: 8335443238ed08b0dd62581f7ced6338
+        Path: /02-creating-a-lesson/02-checkpoints.md
   -
     Title: Assignments
     Description: Assignments
