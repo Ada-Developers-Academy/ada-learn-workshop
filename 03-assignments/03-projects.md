@@ -86,9 +86,18 @@ Your link goes here
 * **rubric** - This only shows to students can can be a table like we've done before to provide grading guidence
 * **explanation** - Students only see this after answering **correctly**, not good for correcting errors.
 
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-danger
+
+## Explanation only gets seen on success
+
+I just want to "call-out" that the explanation block is only seen after the student has **successfully** submitted a project/question.
+
+### !end-callout
+
 ## Testable Projects
 
-These are projects where the student is given a github repo.  They normally fork the repo (but aren't required) and they submit a link to a repo.
+These are projects where the student is given a github repo.  They normally fork the repo (but aren't required) and they submit a link to a repo.  It's useful to note that the project being tested does **not** have to be in gSchool!
 
 ### How They Work
 
@@ -155,10 +164,13 @@ An example `test.sh` file is like this:
 npm run grade
 ```
 
-I also have a [demo Ruby testable project repo.]().
+I also have a [demo Ruby testable project repo.](https://github.com/Ada-Developers-Academy/testable-project).
 
 
-## Example
+## Example - Markdown and result
+
+![Example Testable Project Markdown](images/testable-proj-markdown.png)
+
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
 
@@ -167,7 +179,7 @@ I also have a [demo Ruby testable project repo.]().
 * type: testable-project
 * id: 57ae23d6-9958-4697-ba6c-f2c2e7689783
 * title: [text, a short question title]
-* upstream: https://github.com/CheezItMan/testable-project
+* upstream: https://github.com/Ada-Developers-Academy/testable-project
 * validate_fork: false
 * points: 1
 * topics: Ruby, Hashes
@@ -201,6 +213,63 @@ Put a link to your fork here
 * hint - Students can see this after a failed submission
 * rubric - Only instructors see this when grading
 * explanation - Students only see this after **Successfully** submitting.
+
+## Example Testable Project Files - Ruby
+
+### Gemfile
+
+```ruby
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'minitest-reporters'
+```
+
+### Dockerfile
+
+```Dockerfile
+# Starting from a minimalist image
+FROM ruby:2.7
+
+# Install bash (must be installed for alpine builds)
+# RUN apk update && apk add bash
+
+# Reference for help contact me
+LABEL maintainer="chris@adadev.org"
+
+# Create a directory for the app
+RUN mkdir /app
+
+# Set the working directory for RUN, ADD and COPY
+WORKDIR /app
+
+# Add entire student fork (overwrites previously added Gemfile & Tests)
+ARG SUBMISSION_SUBFOLDER
+ADD $SUBMISSION_SUBFOLDER /app
+
+# Optional - Copy Gemfile over and install Gems
+# COPY ./Gemfile .
+
+RUN gem install bundler
+RUN bundle install
+
+# Copy over bash runner
+ADD test.sh .
+# Copy over Rakefile
+ADD Rakefile .
+# Copy over tests
+ADD ./test .
+
+RUN chmod +x test.sh
+```
+
+### test.sh
+
+```bash
+#!/bin/bash
+
+rake
+```
 
 ## Resources
 
