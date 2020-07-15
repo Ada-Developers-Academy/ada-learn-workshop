@@ -1,6 +1,6 @@
 # Course.yaml
 
-Each course you create is connected with a file called `course.yaml`.  This file lists all the repositories that your course uses.  
+Each course and it's repos are connected with a file called `course.yaml`.  This file lists all the repositories that your course uses.  You can typically create a course.yaml in your 1st or main repository.
 
 ## Create a `course.yaml`
 
