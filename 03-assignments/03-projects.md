@@ -178,7 +178,7 @@ I also have a [demo Ruby testable project repo.](https://github.com/Ada-Develope
 
 * type: testable-project
 * id: 57ae23d6-9958-4697-ba6c-f2c2e7689783
-* title: [text, a short question title]
+* title: Sample Testable Project
 * upstream: https://github.com/Ada-Developers-Academy/testable-project
 * validate_fork: false
 * points: 1
