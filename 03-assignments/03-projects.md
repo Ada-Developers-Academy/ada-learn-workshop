@@ -62,6 +62,8 @@ Your link goes here
 <!-- other optional sections -->
 ##### !hint
 
+This is a **really** bad hint!
+
 ##### !end-hint
 
 ##### !rubric
