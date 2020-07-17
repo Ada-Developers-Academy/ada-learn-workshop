@@ -39,13 +39,13 @@ Which file determines which repos are used by a course?
 <!-- other optional sections -->
 ##### !hint
 
-config and autoconfig.yaml determine the sequence of units within a section.
+`config.yaml` and `autoconfig.yaml` determine the sequence of units within a section.
 
 ##### !end-hint
 
 ##### !explanation 
 
-course.yaml lists the repos used for a course.
+`course.yaml` lists the repos used for a course.
 
 ##### !end-explanation
 

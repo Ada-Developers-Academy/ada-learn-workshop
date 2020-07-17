@@ -13,7 +13,7 @@ Project challenges allow students to do work outside of learn and submit links t
 
 * type: project
 * id: 64058bd9-f61c-494b-a3b9-7197378be53b
-* title: Submit a Hello World Project
+* title: Regular Project Example
 * points: 1
 * topics: ruby, intro
 

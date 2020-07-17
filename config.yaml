@@ -50,7 +50,7 @@ Standards:
         UID: 8335443238ed08b0dd62581f7ced6338
         Path: /02-creating-a-lesson/02-checkpoints.md
   -
-    Title: Assignments
+    Title: Coding Assignments
     Description: Assessing Stuff
     UID: 56c4b82e7a8861de86a5ebe5eaa62225
     SuccessCriteria:
