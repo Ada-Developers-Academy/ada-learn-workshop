@@ -1,5 +1,7 @@
 # Creating A Course
 
+Blah!
+
 In this lesson you will create a sample course in Learn and enroll students.
 
 ## Creating a Course in Learn
