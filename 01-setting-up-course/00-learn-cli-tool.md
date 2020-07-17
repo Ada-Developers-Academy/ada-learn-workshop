@@ -4,7 +4,10 @@ In this lesson we just get setup to write Learn Content.
 
 ## Log into Learn
 
-Go to [Learn](https://learn-2.galvanize.com/api_token) and log in with your Github account.  Learn has 2 sections **L
+Go to [Learn](https://learn-2.galvanize.com/api_token) and log in with your Github account.  Learn has 2 sections **Learn** and **Auth**.
+
+* Learn is the LMS tool which handles content management and grading. 
+* Auth handles Authentication, enrolling students in courses and I _think_ connecting Learn to things like SalesForce.
 
 ## Learn Cli Tool
 
