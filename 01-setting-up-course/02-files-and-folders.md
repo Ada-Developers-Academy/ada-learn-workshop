@@ -41,6 +41,20 @@ Once you are ready to see your code in Learn, you can publish the files by:
 * Then publishing with the Learn Cli tool
   * `learn publish`
 
+
+```bash
+$ git add .                                
+$ git commit -m "fixed the thing"          
+[master 4092f2a] fixed the thing
+ 1 file changed, 31 insertions(+)
+$ learn publish  
+INFO: Using existing config.yaml. Publishing block with repo name ada-learn-workshop
+Pushing work to remote origin master
+
+Building release...
+Block 835 released!
+```
+
 You might need to update the course with a release in section 4 [connecting a course and repo](./04-connecting-course-and-repo.md).
 
 ### Preview
