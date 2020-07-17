@@ -1,6 +1,6 @@
 # Checkpoints
 
-A Checkpoint is a markdown file which is named to end with `checkpoint.md`.  Each Checkpoint file must have at least one question.  Checkpoints are otherwise normal markdown documents.   Checkpoints are essentially tests, you can create auto-graded and students, by default, can be reattempted numerous times.  If you want to set the max attempts, you can add it to the block's config.yaml file.
+A Checkpoint is a markdown file which is named to end with `checkpoint.md`.  Each Checkpoint file must have at least one question.  Checkpoints are otherwise normal markdown documents.   Checkpoints are essentially tests, you can create auto-graded and students, by default, can be reattempted numerous times.  If you want to set the max attempts, you can add it to the block's **`config.yaml`** file.
 
 ![Max Attempts Demo](images/checkpoint-max-attempts.png)
 

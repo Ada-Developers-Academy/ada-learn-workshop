@@ -10,6 +10,14 @@ You can generate callouts by using the following code.  You can generate a templ
 
 ![Callouts](images/callout.png)
 
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-info
+
+## title
+body
+
+### !end-callout
+
 ## Learn Questions
 
 Learn can also make the following questions such as:
