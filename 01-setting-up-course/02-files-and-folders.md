@@ -13,7 +13,7 @@ You can create units with a collection of folders in your github repository.  It
 
 ![Github Repo Folders](images/github-unit-folders.png)
 
-![Learn Unit Folders](images/learn-units.png)]
+![Learn Unit Folders](images/learn-units.png)
 
 ## Files
 
