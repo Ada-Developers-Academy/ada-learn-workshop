@@ -27,7 +27,7 @@ You can find your [API token](https://learn-2.galvanize.com/api_token) on Learn.
 
 - [Becca & Simon](https://github.com/gschool/ada-becca-simon)
 - [Jared & Devin](https://github.com/gSchool/ada-Jared-Devin)
-- [Kaida & Bethany](https://github.com/gSchool/ada-Kaida-Bethany)
+- [Kaida, Bethany, & Sarah](https://github.com/gSchool/ada-Kaida-Bethany)
 
 ## Resources
 
