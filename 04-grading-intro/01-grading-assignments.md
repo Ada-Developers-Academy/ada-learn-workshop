@@ -20,3 +20,13 @@ I suggest
 * We also make a regular project markdown question with a link to a PR and we can give detailed feedback here.
 
 Students will get notifications on the site when they recieve feedback from instructors. 
+
+
+
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-danger
+
+## Numeric Feedback
+Students will get numeric grades as feedback currently, not Green-Yellow-Red.  We'll have to consider how we want to handle this.
+
+### !end-callout
