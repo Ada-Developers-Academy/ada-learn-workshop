@@ -95,6 +95,10 @@ Standards:
   -
 ```
 
+Note in the above `config.yaml` file each `UID` field must be unique for the project and the paths must match exactly.  
+
+Because of this, I tend to just use `autoconfig.yaml` until I have all the sections I want and can then maintain the `config.yaml` file manually.
+
 ## Exercise
 
 Rename your `autoconfig.yaml`, add and commit your material and re-publish the content.
