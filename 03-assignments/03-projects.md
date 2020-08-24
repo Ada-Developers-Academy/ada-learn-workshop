@@ -2,7 +2,7 @@
 
 Project challenges allow students to do work outside of learn and submit links to their code. These can be PR links, Repl.it links or Gists.  Regular project submissions are **not automatically graded**.
 
-## Project information
+## Project Assignment with No Tests
 
 ![Example Project Markdown](images/project.png)
 
@@ -83,9 +83,9 @@ This is a **really** bad hint!
 ### Project Fields
 
 * **topics** - Helpful to group assessments for seeing areas of concern
-* **points** - Do we care? I dunno, it helps with weighting
+* **points** - Chris suggests scoring all projects out of 2, 0 = Red, 1 = Yellow, 2 = Green
 * **hint** - Show to the user prior to submission
-* **rubric** - This only shows to students can can be a table like we've done before to provide grading guidence
+* **rubric** - This only shows to students can can be a table like we've done before to provide grading guidence.  It also shows RENDERED markdown so we can't just copy and paste into comments.
 * **explanation** - Students only see this after answering **correctly**, not good for correcting errors.
 
 <!-- available callout types: info, success, warning, danger, secondary  -->
@@ -97,7 +97,7 @@ I just want to "call-out" that the explanation block is only seen after the stud
 
 ### !end-callout
 
-## Testable Projects
+## Projects with Instructor Tests
 
 These are projects where the student is given a github repo.  They normally fork the repo (but aren't required) and they submit a link to a repo.  It's useful to note that the project being tested does **not** have to be in gSchool!
 
@@ -166,7 +166,7 @@ An example `test.sh` file is like this:
 npm run grade
 ```
 
-I also have a [demo Ruby testable project repo.](https://github.com/Ada-Developers-Academy/testable-project).
+I also have a [demo Ruby testable project repo.](https://github.com/adagold/linked-list).
 
 
 ## Example - Markdown and result
@@ -210,21 +210,26 @@ Put a link to your fork here
 
 ### Testable Project Fields of note
 
-* upstream - Lists the project repository
-* validate_form - True or False value, if you want to require the submission to be a fork
-* hint - Students can see this after a failed submission
-* rubric - Only instructors see this when grading
-* explanation - Students only see this after **Successfully** submitting.
+* **upstream** - Lists the project repository
+* **validate_form** - True or False value, if you want to require the submission to be a fork
+* **hint** - Students can see this after a failed submission
+* **rubric** - Only instructors see this when grading
+* **explanation** - Students only see this after **Successfully** submitting.
 
 ## Example Testable Project Files - Ruby
 
 ### Gemfile
 
 ```ruby
-source 'https://rubygems.org'
+# frozen_string_literal: true
+source "https://rubygems.org"
 
 gem 'rake'
+gem 'minitest'
+gem 'minitest-spec'
 gem 'minitest-reporters'
+gem "pry"
+gem 'minitest-skip'
 ```
 
 ### Dockerfile
@@ -272,6 +277,40 @@ RUN chmod +x test.sh
 
 rake
 ```
+
+### Creating a Project with Student Tests
+
+For a testable project with student tests you can use the same template as above but remove lines which copy over instructor tests and gemfile from the Dockerfile.
+
+This results in the following Dockerfile
+
+```Dockerfile
+# Starting from a minimalist image
+FROM ruby:2.7
+# Reference for help contact me
+LABEL maintainer="chris@adadev.org"
+
+# Create a directory for the app
+RUN mkdir /app
+
+# Set the working directory for RUN, ADD and COPY
+WORKDIR /app
+
+# Add entire student fork (overwrites previously added files)
+ARG SUBMISSION_SUBFOLDER
+ADD $SUBMISSION_SUBFOLDER /app
+
+RUN gem install bundler
+RUN bundle install
+
+RUN chmod +x test.sh
+```
+
+## But what about PR Reviews???!!!
+
+For PR reviews you can have students submit their PR as a short-answer question and then comment on them.  For example
+
+![PR Link](images/pr-link.png)
 
 ## Resources
 
