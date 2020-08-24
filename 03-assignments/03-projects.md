@@ -4,11 +4,30 @@
 
 Project challenges allow students to do work outside of learn and submit links to their code. These can be PR links, Repl.it links or Gists.  Regular project submissions are **not automatically graded**.
 
-* [Example Testable Project](https://github.com/adagold/linked-list)
-
 ## Project Assignment with No Tests
 
+You can generate the markdown below with `learn markdown pr` from the terminal.
+
 ![Example Project Markdown](images/project.png)
+
+### Project Fields
+
+* **topics** - Helpful to group assessments for seeing areas of concern
+* **points** - Chris suggests scoring all projects out of 2, 0 = Red, 1 = Yellow, 2 = Green
+* **hint** - Show to the user prior to submission
+* **rubric** - This only shows to students can can be a table like we've done before to provide grading guidence.  It also shows RENDERED markdown so we can't just copy and paste into comments.
+* **explanation** - Students only see this after answering **correctly**, not good for correcting errors.
+
+<!-- available callout types: info, success, warning, danger, secondary  -->
+### !callout-danger
+
+## Explanation only gets seen on success
+
+I just want to "call-out" that the explanation block is only seen after the student has **successfully** submitted a project/question.
+
+### !end-callout
+
+## Example Project Question
 
 <!-- >>>>>>>>>>>>>>>>>>>>>> BEGIN CHALLENGE >>>>>>>>>>>>>>>>>>>>>> -->
 <!-- Replace everything in square brackets [] and remove brackets  -->
@@ -84,26 +103,11 @@ This is a **really** bad hint!
 
 <!-- ======================= END CHALLENGE ======================= -->
 
-### Project Fields
-
-* **topics** - Helpful to group assessments for seeing areas of concern
-* **points** - Chris suggests scoring all projects out of 2, 0 = Red, 1 = Yellow, 2 = Green
-* **hint** - Show to the user prior to submission
-* **rubric** - This only shows to students can can be a table like we've done before to provide grading guidence.  It also shows RENDERED markdown so we can't just copy and paste into comments.
-* **explanation** - Students only see this after answering **correctly**, not good for correcting errors.
-
-<!-- available callout types: info, success, warning, danger, secondary  -->
-### !callout-danger
-
-## Explanation only gets seen on success
-
-I just want to "call-out" that the explanation block is only seen after the student has **successfully** submitted a project/question.
-
-### !end-callout
-
 ## Projects with Instructor Tests
 
 These are projects where the student is given a github repo.  They normally fork the repo (but aren't required) and they submit a link to a repo.  It's useful to note that the project being tested does **not** have to be in gSchool!
+
+* [Example Testable Project](https://github.com/adagold/linked-list)
 
 ### How They Work
 
