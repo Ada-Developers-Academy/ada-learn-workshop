@@ -1,6 +1,10 @@
-# Projects
+# Projects & Projects with Tests
+
+<iframe src="https://adaacademy.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=f3abba0a-26e3-44ba-8378-ac210148f226&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 Project challenges allow students to do work outside of learn and submit links to their code. These can be PR links, Repl.it links or Gists.  Regular project submissions are **not automatically graded**.
+
+* [Example Testable Project](https://github.com/adagold/linked-list)
 
 ## Project Assignment with No Tests
 
@@ -210,11 +214,15 @@ Put a link to your fork here
 
 ### Testable Project Fields of note
 
-* **upstream** - Lists the project repository
+* **upstream** - Lists the instructor project repository
 * **validate_form** - True or False value, if you want to require the submission to be a fork
 * **hint** - Students can see this after a failed submission
 * **rubric** - Only instructors see this when grading
 * **explanation** - Students only see this after **Successfully** submitting.
+* **Title**
+* **Points** - Chris suggests scoring projects out of 2, 0 = Red, 1 = Yellow and 2 = Green
+* **!Question**  - The project question
+* **Placeholder**
 
 ## Example Testable Project Files - Ruby
 
@@ -315,3 +323,5 @@ For PR reviews you can have students submit their PR as a short-answer question 
 ## Resources
 
 * [Official Learn Documentation on Project Challenges](https://learn-2.galvanize.com/cohorts/667/blocks/13/content_files/Testing-Project-Challenges.md)
+
+
