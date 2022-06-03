@@ -1,4 +1,3 @@
-
 # Setting up Files & Folders
 
 Each Cohort/Course in Learn is made up of sections, each section is a repository in Github.
