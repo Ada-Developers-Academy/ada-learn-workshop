@@ -23,12 +23,6 @@ learn set --api_token=YOUR_LEARN_API_TOKEN
 
 You can find your [API token](https://learn-2.galvanize.com/api_token) on Learn. 
 
-## Find your Repository
-
-- [Becca & Simon](https://github.com/gschool/ada-becca-simon)
-- [Jared & Devin](https://github.com/gSchool/ada-Jared-Devin)
-- [Kaida, Bethany, & Sarah](https://github.com/gSchool/ada-Kaida-Bethany)
-
 ## Resources
 
 - [Learn Cli Docs](https://github.com/gSchool/glearn-cli)
