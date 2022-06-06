@@ -8,12 +8,16 @@
 ---
 Standards:
   -
-    Title: Setting Up Course
+    Title: Setting Up Course [Learn Admins]
     Description: Getting Started
     UID: 5416bdc5b988be692318a7a903ddac1d
     SuccessCriteria:
       - success criteria
     ContentFiles:
+      -
+        Type: Lesson
+        UID: d4c471d4-e419-4b5d-adb0-fa9527927d6e
+        Path: /01-setting-up-course/00-intro.md
       -
         Type: Lesson
         UID: b2c45d91d6d720c174b54acb0d1c3c54
